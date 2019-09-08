@@ -1,5 +1,44 @@
 aside {
     height: 100%;
-    width: 52px;
+    width: $sivebar_size;
     background-color: $gray2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    nav {
+        height: 100%;
+    }
+
+    .nav__item {
+        width: $sivebar_size;
+        height: $sivebar_size;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .mat-icon-button {
+            width: $sivebar_size;
+            height: $sivebar_size;
+            .mat-button-wrapper {
+                width: 36px;
+                height: 36px;
+                mat-icon {
+                    width: 36px;
+                    height: 36px;
+                    font-size: 36px;
+                    color: #ADADAD;
+                    vertical-align: text-top;
+                }
+            }
+        }
+    }
+    .nav__item.active {
+        .mat-icon-button {
+            .mat-button-wrapper {
+                mat-icon {
+                    color: white;
+                }
+            }
+        }
+    }
 }
+
