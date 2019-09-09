@@ -31,8 +31,8 @@ aside {
             }
         }
     }
-    .nav__item.active {
-        .mat-icon-button {
+    .nav__item {
+        .mat-icon-button.active {
             .mat-button-wrapper {
                 mat-icon {
                     color: white;

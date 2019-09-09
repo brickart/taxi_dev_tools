@@ -4,9 +4,9 @@ import { EmulatorPageComponent } from './emulator-page/emulator-page.component';
 import { SettingsPageComponent } from './settings-page/settings-page.component';
 
 const routes: Routes = [
-    { path: 'emulators', loadChildren: './emulator/emulator.module#EmulatorModule' },
-    { path: 'settings', loadChildren: './settings/settings.module#SettingsModule' },
-    { path: '', redirectTo: '/emulators', pathMatch: 'full'},
+    { path: 'emulator', component: EmulatorPageComponent },
+    { path: 'settings', component: SettingsPageComponent },
+    { path: '', redirectTo: '/emulator', pathMatch: 'full'},
     { path: '**', redirectTo: '' },
 ];
 

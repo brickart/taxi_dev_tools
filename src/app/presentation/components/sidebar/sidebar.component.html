@@ -1,13 +1,21 @@
 <aside>
     <nav>
-        <div class="nav__item active">
-            <button mat-icon-button aria-label="Example icon-button with a heart icon">
+        <div class="nav__item">
+            <button
+                routerLink="/emulator"
+                routerLinkActive="active"
+                mat-icon-button
+                aria-label="Example icon-button with a heart icon">
                 <mat-icon>dashboard</mat-icon>
             </button>
         </div>
     </nav>
     <div class="nav__item">
-        <button mat-icon-button aria-label="Example icon-button with a heart icon">
+        <button
+            routerLink="/settings"
+            routerLinkActive="active"
+            mat-icon-button
+            aria-label="Example icon-button with a heart icon">
             <mat-icon>settings_applications</mat-icon>
         </button>
     </div>
