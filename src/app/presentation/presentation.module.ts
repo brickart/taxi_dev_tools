@@ -13,6 +13,6 @@ import { ComponentsModule } from './components/components.module';
     RoutingModule,
     ComponentsModule
   ],
-  exports: [PresentationComponent ]
+  exports: [ PresentationComponent ]
 })
 export class PresentationModule { }

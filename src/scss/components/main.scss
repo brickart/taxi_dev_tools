@@ -2,4 +2,7 @@ main {
     width: calc(100vw - 52px);
     height: 100%;
     background-color: $gray3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
