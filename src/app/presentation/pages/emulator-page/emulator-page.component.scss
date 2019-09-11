@@ -1,0 +1,27 @@
+:host {
+    width: 100%;
+    height: 100%;
+}
+
+.emulator-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    &__container, &__overlay {
+        width: 100%;
+        height: 100%;
+        display: block;
+        box-sizing: border-box;
+    }
+    &__container {
+        padding: 36px;
+    }
+    &__overlay {
+        padding: 12px;
+        position: absolute;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+}
