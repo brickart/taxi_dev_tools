@@ -5,17 +5,22 @@
     &:last-child { margin-right: 0; }
 }
 .emulator {
-    overflow: hidden;
     background-color: #434343;
     height: 100%;
     width: 250px;
     border-radius: 20px;
-
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;  
+    box-sizing: border-box;
     &__header {
-        height: 300px;
+        border-radius: 20px;
+        height: 40%;
     }
 
     &__info {
+        height: 20%;
         background-color: #555555;
         padding: 12px;
         p {
@@ -43,9 +48,15 @@
         }
     }
     &__feed {
-        min-height: 100%;
+        position: relative;
+        padding: 12px;
+        height: 40%;
         overflow-x: hidden;
-        overflow-y: auto;
+        overflow-y: scroll;
         white-space: nowrap;
+        &__body {
+            display: flex;
+            flex-direction: column;
+        }
     }
 }
