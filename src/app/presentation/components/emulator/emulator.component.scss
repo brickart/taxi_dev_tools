@@ -42,4 +42,10 @@
             margin: 4px 0 4px 6px;
         }
     }
+    &__feed {
+        min-height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        white-space: nowrap;
+    }
 }
