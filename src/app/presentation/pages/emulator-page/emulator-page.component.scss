@@ -16,6 +16,13 @@
     }
     &__container {
         padding: 36px;
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        overflow-x: auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
     }
     &__overlay {
         padding: 12px;
@@ -23,5 +30,9 @@
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
+        pointer-events: none;
+        button {
+            pointer-events: all;
+        }
     }
 }

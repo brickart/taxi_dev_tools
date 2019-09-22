@@ -1,0 +1,13 @@
+:host {
+    display: inline-block;
+    margin: 8px;
+    &:first-child { margin-left: 0; }
+    &:last-child { margin-right: 0; }
+}
+.emulator {
+    background-color: tomato;
+    height: 100%;
+    width: 250px;
+    border-radius: 20px;
+    
+}
